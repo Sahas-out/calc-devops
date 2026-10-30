@@ -1,5 +1,7 @@
 services:
   app:
+    # Jenkins sets IMAGE_TAG to the build number; locally it falls back to "latest"
+    image: ${DOCKER_IMAGE:-sahas000/calc-devops}:${IMAGE_TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile
