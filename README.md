@@ -151,3 +151,5 @@ Every build is kept on Docker Hub under its build number. To redeploy an earlier
 ```bash
 IMAGE_TAG=15 COMPOSE_PROJECT_NAME=calc-devops docker compose up -d --no-build
 ```
+
+
